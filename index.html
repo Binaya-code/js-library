@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Library</h1>
+    
+     <button id="openDialogBtn">Add Book</button>
+    
+    <dialog id="myDialog">
+        <form action="">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title">
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="title">
+            <label for="pages">Pages:</label>
+            <input type="number" id="pages" name="title">
+            <div id="read">
+                <label for="read">Read</label>
+                <input type="checkbox" id="read" name="read">
+            </div>
+            <div class="buttonPair">
+                <button class="btnPair">submit</button>
+                <button id="closeBtn" class="btnPair">cancel</button>
+            </div>
+        </form>
+    </dialog>
+
+    <script src="script.js"></script>
 </body>
 </html>
